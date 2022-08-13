@@ -1,0 +1,29 @@
+@import "./theme.scss";
+
+$navbar-custom-color: transparent;
+$navbar-height: 5rem;
+
+$nav-link-color: #080808;
+$nav-link-active-color: #f04324;
+$nav-link-hover-color: #686868;
+
+.navbar {
+    @extend .navbar;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: $navbar-height;
+    background-color: $navbar-custom-color;
+}
+
+.nav-link{
+    color: $nav-link-color;
+}
+
+.nav-link:hover {
+    color: $nav-link-hover-color;
+}
+
+.nav-link:active {
+    color: $nav-link-active-color;
+}
+

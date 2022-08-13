@@ -1,0 +1,9 @@
+$light-theme: (
+    "primary": #F3F3F3,
+    "secondary": #1eecd1,
+    "background": whitesmoke
+);
+
+body {
+    background-color: map-get($map: $light-theme, $key: "background");
+}
