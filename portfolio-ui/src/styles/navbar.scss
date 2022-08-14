@@ -1,11 +1,15 @@
 @import "./theme.scss";
 
-$navbar-custom-color: transparent;
+$navbar-custom-color: whitesmoke;
 $navbar-height: 5rem;
 
 $nav-link-color: #080808;
 $nav-link-active-color: #f04324;
 $nav-link-hover-color: #686868;
+
+.navbar-container { 
+    position: absolute;
+}
 
 .navbar {
     @extend .navbar;
