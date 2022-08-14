@@ -3,10 +3,12 @@
 @import "../../../node_modules/bootstrap/scss/mixins";
 
 $home-content-border-radius: 0.6rem;
-$home-image-width-xs: 75vw;
+$home-image-width-xs: 65vw;
 $home-image-width-md: 50vw;
 $home-image-width-lg: 45vw;
-$home-image-width-xl: 40vw;
+$home-image-width-xl: 35vw;
+$home-image-max-width: 900px;
+
 
 @include media-breakpoint-down(md)
 {
@@ -29,9 +31,7 @@ $home-image-width-xl: 40vw;
 
         .home-text-content {
             padding: 1rem;
-            border-radius: $home-content-border-radius;
-            border: 1px solid;
-            text-align: justify;
+            text-align: center;
         }
 
         .image-box {
@@ -42,6 +42,13 @@ $home-image-width-xl: 40vw;
         .home-image {
             width: $home-image-width-xs;
             border-radius: $home-content-border-radius;
+        }
+        
+        animation: fade-in 1.5s;
+
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; }
         }
     }
     
@@ -78,6 +85,12 @@ $home-image-width-xl: 40vw;
             border-radius: $home-content-border-radius;
         }
 
+        animation: fade-in 2s;
+
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; }
+        }
     }
 }
 @include media-breakpoint-up(xl) {
@@ -104,10 +117,12 @@ $home-image-width-xl: 40vw;
             margin-top: 100px;
             text-align: center;
             width: $home-image-width-xl;
+            max-width: $home-image-max-width;
         }
 
         .home-image {
             width: $home-image-width-xl;
+            max-width: $home-image-max-width;
             border-radius: $home-content-border-radius;
         }
 
@@ -117,13 +132,12 @@ $home-image-width-xl: 40vw;
 @include media-breakpoint-between(md, lg) {
     .home {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         height: 100vh;
         width: 100%;
         padding: 0 10%;
         flex-direction: column-reverse;
-        // flex-wrap: wrap;
         padding-top: 10%;
 
         .home-item {
@@ -132,6 +146,7 @@ $home-image-width-xl: 40vw;
         }
 
         .home-text-content {
+            text-align: center;
             padding: 1rem;
         }
 
@@ -144,6 +159,12 @@ $home-image-width-xl: 40vw;
             width: $home-image-width-md;
             border-radius: $home-content-border-radius;
         }
+        
+        animation: fade-in 2s;
 
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; }
+        }
     }
 }

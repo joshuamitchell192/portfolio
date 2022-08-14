@@ -31,3 +31,7 @@ $nav-link-hover-color: #686868;
     color: $nav-link-active-color;
 }
 
+a.active:hover{
+    color: $nav-link-hover-color;
+}
+
