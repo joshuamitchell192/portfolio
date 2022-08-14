@@ -4,9 +4,9 @@
 
 $home-content-border-radius: 0.6rem;
 $home-image-width-xs: 75vw;
-$home-image-width-md: 60vw;
-$home-image-width-lg: 50vw;
-$home-image-width-xl: 650px;
+$home-image-width-md: 50vw;
+$home-image-width-lg: 45vw;
+$home-image-width-xl: 40vw;
 
 @include media-breakpoint-down(md)
 {
@@ -31,7 +31,7 @@ $home-image-width-xl: 650px;
             padding: 1rem;
             border-radius: $home-content-border-radius;
             border: 1px solid;
-        
+            text-align: justify;
         }
 
         .image-box {
@@ -64,7 +64,7 @@ $home-image-width-xl: 650px;
         .home-text-content {
             margin-right: 10%;
             padding: 1rem;
-        
+            text-align: left;
         }
 
         .image-box {
