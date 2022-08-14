@@ -126,6 +126,13 @@ $home-image-max-width: 900px;
             border-radius: $home-content-border-radius;
         }
 
+        animation: fade-in 2s;
+
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; }
+        }
+
     }
 }
 
