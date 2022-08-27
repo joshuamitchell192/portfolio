@@ -1,3 +1,10 @@
 {
-    "route": "/*"
+    "routes": [
+      {
+        "route": "/home"
+      },
+      {
+        "route": "/work"
+      }
+    ]
 }
