@@ -11,9 +11,24 @@ import { RouterModule } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  private themeSetting: boolean;
+
+  constructor() { 
+    this.themeSetting = false;
+  }
 
   ngOnInit(): void {
+  }
+
+  changeTheme(): void {
+    this.themeSetting = !this.themeSetting;
+    if (this.themeSetting)
+    {
+      document.body.classList.add("dark-theme");
+    }
+    else {
+      document.body.classList.remove("dark-theme");
+    }
   }
 
 }

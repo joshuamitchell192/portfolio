@@ -71,24 +71,59 @@ $home-image-max-width: 900px;
         .home-text-content {
             margin-right: 10%;
             padding: 1rem;
+            padding-top: 20px;
             text-align: left;
+            border-radius: .5rem;
+
+        }
+
+        .home-text-content:hover {
+            border: 2px solid transparent;
+            border-radius: 1rem;
+            background-color: var(--surface-variant);//#EEEAEA;//rgb(232, 232, 232);
+            // box-shadow: 5px 5px 4px grey;
+            transition-duration: 0.15s;
+        }
+
+        .home-text-content:active {
+            border: 2px solid var(--secondary);
+            border-radius: 1rem;
+            background-color: var(--background);
+            box-shadow: 0px 0px rgb(164, 164, 164);
+            // transition-duration: 0.01s;
         }
 
         .image-box {
             margin-top: 100px;
             text-align: center;
             width: $home-image-width-lg;
+
         }
 
         .home-image {
             width: $home-image-width-lg;
             border-radius: $home-content-border-radius;
+            // border: 2px solid transparent;
+
+            // transition-duration: .5s;
+        }
+
+        .home-image:hover {
+            // border: 2px solid black;
+            transition-duration: .5s;
+            // box-shadow: 5px 5px 4px grey;
+            animation: enlarge 0.5s both ;
+        }
+
+        @keyframes enlarge {
+            from { transform: scale(1.0); }
+            to { transform: scale(1.01); }
         }
 
         animation: fade-in 2s;
 
         @keyframes fade-in {
-            from { opacity: 0; transform: translateY(25px); }
+            from { opacity: 0; transform: translateY(40px); }
             to { opacity: 1; }
         }
     }
@@ -110,7 +145,7 @@ $home-image-max-width: 900px;
         .home-text-content {
             margin: 0 10%;
             padding: 1rem;
-        
+            // font-family: Helvetica;
         }
 
         .image-box {
@@ -129,7 +164,7 @@ $home-image-max-width: 900px;
         animation: fade-in 2s;
 
         @keyframes fade-in {
-            from { opacity: 0; transform: translateY(25px); }
+            from { opacity: 0; transform: translateY(40px); }
             to { opacity: 1; }
         }
 
@@ -170,7 +205,7 @@ $home-image-max-width: 900px;
         animation: fade-in 2s;
 
         @keyframes fade-in {
-            from { opacity: 0; transform: translateY(25px); }
+            from { opacity: 0; transform: translateY(40px); }
             to { opacity: 1; }
         }
     }

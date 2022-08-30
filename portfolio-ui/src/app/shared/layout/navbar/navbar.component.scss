@@ -1,10 +1,12 @@
 .active{
-    color: black;
+    color: var(--primary);
 
-    span {
-
-        border-bottom: 3px solid #c67f5d;
-        padding: 3px 3px 4px;
+    div {
+        height: 0;
+        border-radius: 2rem;
+        border: 2px solid #c67f5d;
+        margin-top: 1px;
+        background-color: #c67f5d;
     }
 }
 
@@ -14,5 +16,6 @@
 
     img {
         height: 20px;
+        filter: grayscale(100%);
     }
 }

@@ -1,13 +1,96 @@
+:root {
+    --primary: #7d5705;
+    --on-primary: #ffffff;
+    --container-primary: #ffdeab;
+    --on-container-primary: #271900;
+
+    --secondary: #356a21;
+    --on-secondary: #ffffff;
+    --container-secondary: #b5f399;
+    --on-container-secondary: #052100;
+
+    --tertiary: #006687;
+    --on-tiertiary: #ffffff;
+    --container-tertiary: #c1e8ff;
+    --on-container-tertiary: #001e2b;
+
+    --error: #ba1a1a;
+    --on-error: #ffffff;
+    --container-error: #ffdad6;
+    --on-container-error: #410002;
+
+    --background: whitesmoke;//#fffbff;
+    --on-background: #1f1b16;
+
+    --surface: #fffbff;
+    --on-surface: #1f1b16;
+
+    --surface-variant: #eee0cf;
+    --on-service-varient: #4e4539;
+
+    --outline: #807667;
+    --nav-link-default: black;
+    --nav-link-hover: var(--tertiary);
+    --nav-link-underline: black;
+}
+
+.dark-theme {
+    --primary: #fabc49;
+    --on-primary: #422c00;
+    --container-primary: #5f4100;
+    --on-container-primary: #ffdeab;
+
+    --secondary: #9ad680;
+    --on-secondary: #0c3900;
+    --container-secondary: #1d5109;
+    --on-container-secondary: #b5f399;
+
+    --tertiary: #74d1ff;
+    --on-tiertiary: #003548;
+    --container-tertiary: #004d67;
+    --on-container-tertiary: #c1e8ff;
+
+    --error: #ffb4ab;
+    --on-error: #690005;
+    --container-error: #93000a;
+    --on-container-error: #ffdad6;
+
+    --background: #1f1b16;
+    --on-background: #eae1d9;
+
+    --surface: #1f1b16;
+    --on-surface: #eae1d9;
+
+    --surface-variant: #4e4539;
+    --on-service-varient: #d2c5b4;
+
+    --outline: #9a8f80;
+
+    --nav-link-default: white;
+    --nav-link-hover: var(--on-container-tertiary);
+    --nav-link-underline: white;
+}
+
+
+
 $light-theme: (
-    "primary": #F3F3F3,
-    "secondary": #1eecd1,
-    "background": whitesmoke
+    "Primary": --primary,
+    "Secondary": #1eecd1,
+    "Tertiary": #d59448,
+    "Background": whitesmoke,
+    "Neutral": #fff
 );
 
 body {
-    background-color: map-get($map: $light-theme, $key: "background");
+    background-color: var(--background);
+    color: var(--on-background);
 }
 
 .show-border {
     border: 3px solid;
+}
+
+::selection {
+    background: #6abe86;
+    // background: var(--secondary)
 }
