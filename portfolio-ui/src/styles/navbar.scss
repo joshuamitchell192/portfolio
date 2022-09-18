@@ -35,7 +35,7 @@ $nav-link-hover-color: #343434;
     color: var(--nav-link-default);
 }
 
-.nav-link::after {
+.nav-link.underline::after {
     position: relative;
     display: block;
     content: '';
@@ -53,7 +53,7 @@ $nav-link-hover-color: #343434;
     padding-right: 0.5rem;
 }
 
-.nav-link:hover::after {
+.nav-link.underline:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }

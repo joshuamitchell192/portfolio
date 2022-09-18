@@ -18,15 +18,20 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.themeSetting = false;
   }
 
   changeTheme(): void {
     this.themeSetting = !this.themeSetting;
+
     if (this.themeSetting)
     {
+      document.getElementById("theme-img")?.setAttribute("src", "/assets/images/moon.svg");
+      document.getElementById("")
       document.body.classList.add("dark-theme");
     }
     else {
+      document.getElementById("theme-img")?.setAttribute("src", "/assets/images/sun.svg");
       document.body.classList.remove("dark-theme");
     }
   }

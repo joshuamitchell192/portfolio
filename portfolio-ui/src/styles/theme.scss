@@ -1,5 +1,5 @@
 :root {
-    --primary: #7d5705;
+    --primary: #a27107;
     --on-primary: #ffffff;
     --container-primary: #ffdeab;
     --on-container-primary: #271900;
@@ -71,19 +71,21 @@
     --nav-link-underline: white;
 }
 
-
-
-$light-theme: (
-    "Primary": --primary,
-    "Secondary": #1eecd1,
-    "Tertiary": #d59448,
-    "Background": whitesmoke,
-    "Neutral": #fff
-);
-
 body {
     background-color: var(--background);
     color: var(--on-background);
+}
+
+.title-font {
+    font-family: quasimoda,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.paragraph-font {
+    font-family: quasimoda,sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .show-border {

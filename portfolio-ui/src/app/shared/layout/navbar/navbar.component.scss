@@ -16,6 +16,6 @@
 
     img {
         height: 20px;
-        filter: grayscale(100%);
+        fill: var(--on-background);
     }
 }
