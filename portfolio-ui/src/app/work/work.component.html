@@ -7,11 +7,11 @@
             </div>
             <div class="custom-carousel-separator">
             </div>
-            <div (click)="scroll(section1, 1)" class="custom-carousel-item minor" id="carousel-item-1">
+            <div (click)="scroll(section1, 1)" class="custom-carousel-item " id="carousel-item-1">
             </div>
             <div class="custom-carousel-separator">
             </div>
-            <div (click)="scroll(section2, 2)" class="custom-carousel-item" id="carousel-item-2">
+            <div (click)="scroll(section2, 2)" class="custom-carousel-item minor" id="carousel-item-2">
             </div>
             <div class="custom-carousel-separator">
             </div>
@@ -19,7 +19,11 @@
             </div>
             <div class="custom-carousel-separator">
             </div>
-            <div (click)="scroll(section4, 4)" class="custom-carousel-item minor" id="carousel-item-4">
+            <div (click)="scroll(section4, 4)" class="custom-carousel-item " id="carousel-item-4">
+            </div>
+            <div class="custom-carousel-separator">
+            </div>
+            <div (click)="scroll(section5, 5)" class="custom-carousel-item minor" id="carousel-item-5">
             </div>
         </div>
     </div>
@@ -33,6 +37,37 @@
                         <h6 class="time-title">May 2022 - present</h6>
                     </div>
                 </header>
+
+                <div class="pill-container">
+                    <span class="pill-item">.Net Framework</span>
+                    <span class="pill-item">ASP.NET</span>
+                    <span class="pill-item">Angular 13</span>
+                    <span class="pill-item">.Net 5</span>
+                    <span class="pill-item">GitLab / Azure DevOps</span>
+                    <span class="pill-item">Octopus Deploy</span>
+                    <span class="pill-item">Oracle Sql</span>
+                </div>
+
+                <ul class="content-container">
+                    <li class="content-item">
+                        Took on a leading role within the team and took on initiatives to improve development, testing processes and documentation. Examples include: moving to a 
+                        git workflow process, introduction of end-to-end testing and creation of a knowledge base to share 
+                        and preserve team / company internal knowledge.
+                    </li>
+                    <li class="content-item">
+                        Provide guidance to other teams and developers on the applications we support.
+                    </li>
+                    <li class="content-item">
+                        Taking on initiatives to modernise applications by redesigning our applications in Angular and .Net and transition to azure cloud services.
+                    </li>
+                    <li class="content-item">
+                        Continued to deliver updates to .Net Framework applications and resolve bugs, working with stakeholders to document and deliver on acceptance criteria.
+                    </li>
+                </ul>
+                
+            </section>
+
+            <section class="section-item hidden" #section1 sectionNumber=1>
                 <header style="padding-top: 20px;">
                     <h2 class="title">Development Engineer</h2><h5 class="organisation-title"> - Griffith University (Brisbane)</h5>
                     <div>
@@ -53,14 +88,15 @@
 
                 <ul class="content-container">
                     <li class="content-item">
-                        Working within the student experience team to deliver changes to new and existing student facing applications in .Net and Angular. Improving processes and 
-                        practices to make the team more efficient and effective. Including improvements to documentation, test driven development, modernising legacy applications, 
-                        assisting other team members and contributing to design decisions.
+                        Worked with stakeholders to deliver updates and bug fixes to student facing applications in .Net, .Net framework and ASP.NET.
+                    </li>
+                    <li class="content-item">
+                        Assisted in development of a new web application in .Net 5 and Angular 13 for students to plan their courses and review their degree progress.
                     </li>
                 </ul>
             </section>
 
-            <section class="section-item hidden" #section1 sectionNumber=1>
+            <section class="section-item hidden" #section2 sectionNumber=2>
                 <header>
                     <h2 class="title">Volunteer C/C++ Embedded Software Developer</h2><h5 class="organisation-title"> - Griffith University (Gold Coast)</h5>
                     <div>
@@ -76,14 +112,14 @@
 
                 <ul class="content-container">
                     <li class="content-item">
-                        Volunteered to complete a project for the university to create a reliable system for operating a photometry experiment with C/C++, Assembly and 
-                        Python. Using a Tiva microcontroller for operating a linear stage with stepper motors, receiving data from multiple sensors (written with µVision IDE). 
-                        And a desktop application for sending instructions and plotting/saving experiment data written in Python and PyQt5.
+                        Volunteered to complete a project for the university to create a reliable system for operating a photometry experiment with C/C++, 
+                        Assembly and Python. Using a Tiva microcontroller for operating a linear stage with stepper motors and receiving data from sensors 
+                        (written with µVision IDE). And a desktop application for sending instructions and plotting/saving experiment data written in Python and PyQt5.
                     </li>
                 </ul>
             </section>
     
-            <section class="section-item hidden" #section2 sectionNumber=2>
+            <section class="section-item hidden" #section3 sectionNumber=3>
                 <header>
                     <h2 class="title">.Net Software Web Developer</h2><h5 class="organisation-title"> - Pivotel Group (Gold Coast)</h5>
                     <div>
@@ -109,7 +145,7 @@
                 </ul>
             </section>
     
-            <section class="section-item hidden" #section3 sectionNumber=3>
+            <section class="section-item hidden" #section4 sectionNumber=4>
                 <header>
                     <h2 class="title">Junior Software Engineer</h2><h5 class="organisation-title"> - Vald Performance (Brisbane)</h5>
                     <div>
@@ -141,7 +177,7 @@
                 </ul>
             </section>
 
-            <section class="section-item hidden" #section4 sectionNumber=4>
+            <section class="section-item hidden" #section5 sectionNumber=5>
                 <header>
                     <h2 class="title">Treasurer</h2><h5 class="organisation-title"> - Griffith Aritifical Intelligence Society (Gold Coast)</h5>
                     <div>

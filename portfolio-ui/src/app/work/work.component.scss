@@ -13,7 +13,7 @@
 }
 
 .section-outer-container {
-    margin-top: 70px;
+    margin-top: 7vh;
     display: inline;
     height: auto;
     // border: 2px var(--on-background) solid;
@@ -122,32 +122,39 @@
 }
 
 .pill-container {
-    margin: 0rem;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-wrap: wrap;
-    // padding-top: 50px;
-    // display: inline;
-    height: 2rem;
-    width: auto;
+    // margin-top: 1rem;
+    padding: .5rem 25px .5rem 10px;
+    display: block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 3rem;
+    width: 80vw;
+
+    mask-image: linear-gradient(to right, transparent 0%, black 15px, black calc(100% - 36px), transparent 100%);
+}
+
+.pill-container::-webkit-scrollbar{
+    display: none;
 }
 
 .pill-item {
-    margin-top: .5rem;
-    margin-right: .5rem;
+    display: inline;
+    margin-top: .4rem;
+    margin-right: .3rem;
     padding: 2px 8px 2px 8px;
     border-radius: 1rem;
     border: 2px var(--on-background) solid;
     background-color: var(--container-tertiary);
-    font-size: 1.1vh;
     color: var(--on-container-tertiary);
+    font-size: 1.4vh;
 }
 
 .pill-item:hover {
     filter: brightness(104%);
-    box-shadow: 1px 1px 2px grey;
-    cursor: grab;
 }
 
 .content-container {
@@ -155,13 +162,12 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    margin-top: 10px;
     width: 100%;
     padding-left: 0;
-    font-size: 2vh;
+    font-size: 1.9vh;
 
     .content-item {
-        margin-top: 1rem;
+        margin-bottom: .75rem;
         list-style: none;
     }
 }
@@ -251,12 +257,16 @@
         }
     }
 
+    .pill-container {
+        width: 80%;
+    }
+
     .pill-item {
         font-size: 12px;
     }
     
     .content-container {
-        margin-top: 50px;
+        margin-top: 30px;
         width: 60vw;
         padding-left: 2rem;
         font-size: 1rem;
@@ -288,7 +298,6 @@
     }
     
     .content-container {
-        margin-top: 50px;
         width: 50vw;
     }
 }

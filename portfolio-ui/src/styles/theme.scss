@@ -1,5 +1,5 @@
 :root {
-    --primary: #d29613;
+    --primary: #d39818;
     --on-primary: #ffffff;
     --container-primary: #ffdeab;
     --on-container-primary: #271900;
@@ -34,6 +34,8 @@
     --nav-link-underline: black;
 
     --timeline-active: rgb(252, 212, 101);
+
+    --selection: #7fcb98;
 }
 
 .dark-theme {
@@ -71,6 +73,8 @@
     --nav-link-default: white;
     --nav-link-hover: var(--on-container-tertiary);
     --nav-link-underline: white;
+
+    --selection: #459660;
 }
 
 body {
@@ -95,6 +99,5 @@ body {
 }
 
 ::selection {
-    background: #6abe86;
-    // background: var(--secondary)
+    background: var(--selection);
 }
