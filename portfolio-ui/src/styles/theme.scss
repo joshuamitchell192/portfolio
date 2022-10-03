@@ -1,5 +1,5 @@
 :root {
-    --primary: #a27107;
+    --primary: #d29613;
     --on-primary: #ffffff;
     --container-primary: #ffdeab;
     --on-container-primary: #271900;
@@ -26,12 +26,14 @@
     --on-surface: #1f1b16;
 
     --surface-variant: #eee0cf;
-    --on-service-varient: #4e4539;
+    --on-surface-variant: #4e4539;
 
     --outline: #807667;
     --nav-link-default: black;
     --nav-link-hover: var(--tertiary);
     --nav-link-underline: black;
+
+    --timeline-active: rgb(252, 212, 101);
 }
 
 .dark-theme {
@@ -77,7 +79,7 @@ body {
 }
 
 .title-font {
-    font-family: quasimoda,sans-serif;
+    // font-family: roboto,sans-serif;
     font-weight: 300;
     font-style: normal;
 }
