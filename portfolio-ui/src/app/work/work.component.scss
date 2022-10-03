@@ -184,6 +184,7 @@
     .custom-carousel-nav-container {
         display: inline;
         width: 40px;
+        margin-top: 0px;
         
         .custom-carousel-nav {
     
@@ -216,6 +217,7 @@
     }
 
     .section-outer-container {
+        margin-top: 0;
         border: 2px var(--on-background) solid;
         border-radius: 1rem;
     }
