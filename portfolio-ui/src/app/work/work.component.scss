@@ -9,12 +9,7 @@
 }
 
 .page-title {
-    // display: none;
     display: none;
-    font-size:14pt;
-
-    text-align: center;
-    margin-top: 100px;
 }
 
 .section-outer-container {
@@ -80,7 +75,7 @@
         }
 
         .custom-carousel-separator {
-            height: 40px;
+            height: 5vh;
             width: 2px;
             margin: 0 5.5px;
             background-color: var(--on-background);
@@ -109,15 +104,19 @@
 
     .title {
         display: block;
+        font-size: 24px;
+        font-size: 3vh;
     }
 
     .organisation-title {
         display: block;
+        font-size: 2vh;
     }
 
     .time-title {
         display: inline;
-        // padding-right: 10px;
+        font-size: 1.8vh;
+        padding-left: 8px;
         padding-top: 8px;
     }
 }
@@ -141,7 +140,7 @@
     border-radius: 1rem;
     border: 2px var(--on-background) solid;
     background-color: var(--container-tertiary);
-    font-size: 7pt;
+    font-size: 1.1vh;
     color: var(--on-container-tertiary);
 }
 
@@ -159,6 +158,7 @@
     margin-top: 10px;
     width: 100%;
     padding-left: 0;
+    font-size: 2vh;
 
     .content-item {
         margin-top: 1rem;
@@ -186,10 +186,6 @@
         width: 40px;
         
         .custom-carousel-nav {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            flex-direction: column;
     
             margin: 10% 20px 10% 0;
             height: 60vh;
@@ -215,13 +211,17 @@
                 margin: 0 9px;
                 background-color: var(--on-background);
             }
-    
-            .custom-carousel-item:hover {
-                cursor: pointer;
-                scale: 1.2;
-            }
         }
     
+    }
+
+    .section-outer-container {
+        border: 2px var(--on-background) solid;
+        border-radius: 1rem;
+    }
+
+    .section-container{
+        height: 65vh;
     }
     
     
@@ -233,59 +233,31 @@
     
         .title {
             display: inline;
+            font-size: 2rem;
         }
     
         .organisation-title {
             display: inline;
+            font-size: 1.25rem;
         }
     
         .time-title {
             display: inline;
             padding-right: 10px;
             padding-top: 8px;
+            font-size: 1rem;
         }
     }
-    
-    .pill-container {
-        margin: 2rem;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        // padding-top: 50px;
-        // display: inline;
-        height: 2rem;
-        width: auto;
-    }
-    
+
     .pill-item {
-        margin-right: .5rem;
-        padding: 2px 8px 2px 8px;
-        border-radius: 1rem;
-        border: 2px var(--on-background) solid;
-        background-color: var(--container-tertiary);
-        font-size: 10pt;
-        color: var(--on-container-tertiary);
-    }
-    
-    .pill-item:hover {
-        filter: brightness(104%);
-        box-shadow: 1px 1px 2px grey;
-        cursor: grab;
+        font-size: 12px;
     }
     
     .content-container {
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
         margin-top: 50px;
         width: 60vw;
         padding-left: 2rem;
-    
-        .content-item {
-            margin-top: 1rem;
-            list-style: none;
-        }
+        font-size: 1rem;
     }
 }
 
@@ -301,7 +273,6 @@
         width: 40px;
         
         .custom-carousel-nav {
-    
             margin: 30% 20px 30% 0;
             height: 60vh;
         }
@@ -315,10 +286,6 @@
     }
     
     .content-container {
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
         margin-top: 50px;
         width: 50vw;
     }
