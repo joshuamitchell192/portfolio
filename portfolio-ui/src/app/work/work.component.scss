@@ -35,10 +35,17 @@
 .hidden {
     opacity: 0;
     transition: all 0.9s;
-}
 
+}
 .show {
     opacity: 1;
+
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
 }
 
 .section-container::-webkit-scrollbar{
@@ -151,6 +158,8 @@
     background-color: var(--container-tertiary);
     color: var(--on-container-tertiary);
     font-size: 1.4vh;
+
+    transform: translateX(-1%);
 }
 
 .pill-item:hover {

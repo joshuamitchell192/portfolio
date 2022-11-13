@@ -2,6 +2,7 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/navbar";
 
 $navbar-custom-color: whitesmoke;
 $navbar-height: 5rem;
@@ -59,6 +60,21 @@ $nav-link-hover-color: #343434;
 .nav-link.underline:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+a.sidebar {
+    padding-block: 0.4rem;
+    padding-inline: .5rem;
+    border-radius: .5rem;
+    color: var(--on-background);
+
+}
+
+a.sidebar:hover {
+    border: black 2px solid;
+    border-radius: .5rem;
+    background: var(--surface-variant);
+    transition: .1s;
 }
 
 .nav-link:active {

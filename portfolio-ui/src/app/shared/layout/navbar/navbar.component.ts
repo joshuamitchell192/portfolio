@@ -26,13 +26,21 @@ export class NavbarComponent implements OnInit {
 
     if (this.themeSetting)
     {
-      document.getElementById("theme-img")?.setAttribute("src", "/assets/images/moon.svg");
+      document.getElementsByName("theme-img")?.forEach(element => { element.setAttribute("src", "/assets/images/moon.svg"); });
       document.getElementById("")
       document.body.classList.add("dark-theme");
+
+      document.getElementById("closeButton")?.classList.add("btn-close-white");
+
+      document.getElementById("navbar")?.classList.add("navbar-dark");
     }
     else {
-      document.getElementById("theme-img")?.setAttribute("src", "/assets/images/sun.svg");
+      document.getElementsByName("theme-img")?.forEach(element => { element.setAttribute("src", "/assets/images/sun.svg"); });
       document.body.classList.remove("dark-theme");
+
+      document.getElementById("closeButton")?.classList.remove("btn-close-white");
+
+      document.getElementById("navbar")?.classList.remove("navbar-dark");
     }
   }
 
