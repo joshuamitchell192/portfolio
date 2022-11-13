@@ -9,49 +9,44 @@ $home-image-width-lg: 45vw;
 $home-image-width-xl: 35vw;
 $home-image-max-width: 900px;
 
-
-@include media-breakpoint-down(md)
-{
-    .home {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        align-items: center;
+.home {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
 
 
-        height: 100vh;
+    height: 100vh;
+    width: 100%;
+    padding: 0 10%;
+    padding-top: 3vh;
+
+    .home-item {
         width: 100%;
-        padding: 0 10%;
-        padding-top: 15vh;
-    
-        .home-item {
-            width: 100%;
-            flex: 1 1 auto;
-        }
+        flex: 1 1 auto;
+    }
 
-        .home-text-content {
-            padding: 1rem;
-            text-align: center;
-        }
+    .home-text-content {
+        padding: 1rem;
+        text-align: center;
+    }
 
-        .image-box {
-            text-align: center;
-            width: $home-image-width-xs;
-        }
-        
-        .home-image {
-            width: $home-image-width-xs;
-            border-radius: $home-content-border-radius;
-        }
-        
-        animation: fade-in 1.5s;
-
-        @keyframes fade-in {
-            from { opacity: 0; transform: translateY(25px); }
-            to { opacity: 1; }
-        }
+    .image-box {
+        text-align: center;
+        width: $home-image-width-xs;
     }
     
+    .home-image {
+        width: $home-image-width-xs;
+        border-radius: $home-content-border-radius;
+    }
+    
+    animation: fade-in 1.5s;
+
+    @keyframes fade-in {
+        from { opacity: 0; transform: translateY(25px); }
+        to { opacity: 1; }
+    }
 }
 
 @include media-breakpoint-up(lg) {
